@@ -1,27 +1,14 @@
-// Назовите порядок вывода в консоль. Объясните, что меняет await.
+// Сейчас числа выводятся не по порядку.
+// Измените run, чтобы в консоли было 1, 2, 3, .
 
-async function first() {
-  console.log(2);
-  await second();
-  console.log(6);
-}
+const run = async () => {
+  console.log(1);
 
-async function second() {
+  setTimeout(() => {
+    console.log(2);
+  }, 40);
+
   console.log(3);
-  await Promise.resolve();
-  console.log(5);
-}
+};
 
-console.log(1);
-
-void first();
-
-Promise.resolve().then(() => {
-  console.log(4);
-});
-
-setTimeout(() => {
-  console.log(8);
-}, 0);
-
-console.log(7);
+run();

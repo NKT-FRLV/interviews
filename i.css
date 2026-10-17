@@ -1,0 +1,5 @@
+/* Стили задачи I. Здесь можно использовать CSS-переменные, grid, flex и media queries. */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}

@@ -12,5 +12,6 @@
     "moduleDetection": "force",
     "types": ["node", "vite/client"]
   },
-  "include": ["*.ts", "*.tsx", "src"]
+  "include": ["*.ts", "*.tsx", "src"],
+  "exclude": ["d.ts", "e.ts", "f.ts", "node_modules"]
 }

@@ -16,8 +16,11 @@
     "f": "tsx f.ts",
     "g": "vite --open",
     "h": "tsx h.ts",
+    "i": "vite --open /i.html",
+    "j": "tsx j.ts",
     "dev": "vite",
     "typecheck": "tsc --noEmit",
+    "typecheck:tasks": "tsc --noEmit -p tsconfig.tasks.json",
     "build": "yarn typecheck && vite build",
     "preview": "vite preview"
   },
